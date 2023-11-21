@@ -9,6 +9,7 @@ body {
   background: #F1F1F1;
 }
 
+/*************************************************** header styles ****************************************************************/
 header{
  max-width: 100%;
   height: 56px;
@@ -24,7 +25,7 @@ header{
   padding: 5px 2px;
   background: #0f0e0e;
   display: flex;
-    /* flex: 30%; */
+    flex: 30%;
    align-items: center;
    justify-content: center;
    gap: 10px;
@@ -49,5 +50,52 @@ header{
   color: lightgray;
   font-weight: bold;
   text-indent: 2px;
-
 }
+
+/*************************************************** wrapper styles ****************************************************************/
+.wrapper{
+  width: 45%;
+  margin: 0 auto;
+  /* background: black; */
+  margin-top: 30px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*************************************************** model styles ****************************************************************/
+.model_container{
+  width: 100%;
+  background: #1A1A1A;
+  padding: 12px 8px 12px 16px;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* display: none; */
+}
+.model_text{
+  line-height:18.2px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.model_util{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.model_btn{
+  padding: 7px 15px;
+  border-radius: 6px;
+  border: none;
+  box-shadow: inset 0px 2px 3px;
+}
+.model_close{
+  width: 25px;
+}
+
+/*************************************************** setup guide styles ****************************************************************/
