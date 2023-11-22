@@ -10,6 +10,7 @@
   font-smooth: always;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
+  font-family: inter;
 }
 body {
   width: 100vw;
@@ -115,6 +116,7 @@ header{
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 .setup_wrapper{
   width: 100%;
@@ -149,3 +151,69 @@ header{
 }
 .setup_toggle{}
 .toggle{}
+/*************************************************** setup items styles ****************************************************************/
+.setup_item_container{
+  /* background:  #7b7878; */
+  padding: 8px 5px;
+  border-radius: 10px; 
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.setup_items{
+  margin-top: 5px;
+  /* background:  #7b7878; */
+  border-radius: 10px;
+  padding: 5px 2px;
+    /* display: flex;
+    gap: 5px;
+    flex-direction: column; */
+}
+.setup_item_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+  /* flex-direction: column; */
+  gap: 20px;
+}
+.setup_item_header_wrapper{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.item_header_img{
+  width: 30px;
+}
+.setup_header_text{
+  font-size: 15px;
+}
+.setup_item_other_wrapper{
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.setup_item_other{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.setup_item_other_text{
+  font-size: 12px;
+}
+.setup_item_other_link{
+
+}
+.setup_item_btn{
+  width: 120px;
+  border-radius: 6px;
+  padding: 7px 2px;
+  background: black;
+  color: white;
+  border: 2px white round;
+  cursor: pointer;
+  font-size: 12px;
+}
+.setup_item_image{}
