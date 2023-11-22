@@ -29,6 +29,9 @@ header{
   padding: 12px 16px;
 
 }
+.logo_image-2{
+  display: none;
+}
 .search_container{
   max-width: 450px;
   padding: 5px 2px;
@@ -102,6 +105,7 @@ header{
   border-radius: 6px;
   border: none;
   box-shadow: inset 0px 2px 3px;
+  cursor: pointer;
 }
 .model_close{
   width: 25px;
@@ -117,6 +121,9 @@ header{
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+.guide_container_wrapper{
+  /* display: none; */
 }
 .setup_wrapper{
   width: 100%;
@@ -147,7 +154,6 @@ header{
 .counter_wrapper{}
 .counter_text{
   font-weight: 200;
-  
 }
 .setup_toggle{}
 .toggle{}
@@ -222,4 +228,118 @@ header{
 }
 .setup_item_image{}
 
-/*************************************************** functionality styles ****************************************************************/
+/*************************************************** media query functionality ****************************************************************/
+/* 650  first media query adjustment*/
+
+@media screen and (max-width: 650px) {
+ /*************************************************** header media query ****************************************************************/
+  .logo_image{
+    display: none;
+  }
+  .logo_image-2{
+    display: inline-block;
+  }
+  .search_container{
+    max-width: 250px;
+    padding: 3px 2px;
+    flex: 20%;
+     gap: 10px;
+  }
+  /*************************************************** wrapper media query ****************************************************************/
+  .wrapper{
+    width: 100%;
+  }
+  /*************************************************** model media query ****************************************************************/
+  .model_container{
+    flex-direction: column;
+    width: 100%;
+    background: #1A1A1A;
+    padding: 8px 5px 8px 12px;
+  border-radius: 0px;
+  
+  }
+  .model_text{
+    font-size: 10px;
+    font-weight: 300;
+  }
+  .model_util{
+    width: 100%;
+    gap: 10px;
+    position: relative;
+    /* justify-content: space-between; */
+  }
+  .model_btn{
+    padding: 5px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    align-self: center;
+    justify-self: center;
+  }
+  .model_close{
+    width: 25px;
+    position: absolute;
+    top: -20;
+    right: -5;
+
+  }
+/*************************************************** setup guide media query ****************************************************************/
+.guide_container{
+  width: 100%;
+  border-radius: 0px;
+  padding: 5px 10px;
+
+}
+.setup_item_image{
+  display: none;
+}
+.setup_head{
+  font-weight: 400;
+  font-size: 15px;
+  padding: 3px 0px;
+  margin-bottom: 2px;
+}
+.setup_text{
+  font-weight: 300;
+  font-size: 10px;
+  line-height:10.2px;
+  margin-bottom: 2px;
+}
+.counter_container{
+  margin-top: 10px;
+  align-items: center;
+}
+.num{
+  font-size: 12px;
+}
+.counter_text{
+ font-size: 12px;
+}
+/*************************************************** setup items media query ****************************************************************/
+.setup_item_other_wrapper{
+  margin-left: 30px;
+  flex-direction: column;
+}
+.setup_item_other{
+  flex-direction: row;
+  gap: 5px;
+}
+.setup_header_text{
+  font-size: 12px;
+}
+.setup_item_other_text{
+  font-size: 10px;
+}
+.setup_item_other_link{
+  flex: 1;
+  text-decoration: none;
+  font-size: 8px;
+}
+
+.setup_item_btn{
+  width: 100px;
+  border-radius: 8px;
+  padding: 5px 2px;
+  font-size: 10px;
+}
+
+}
