@@ -22,3 +22,10 @@ function toggleSetup(){
   
     }
    
+    // function to toggle Notification ball
+
+    function toggleBell(){
+        const bellToggle = document.getElementById('noti_container');
+        console.log(bellToggle)
+         bellToggle.classList.toggle('show_noti')
+    }

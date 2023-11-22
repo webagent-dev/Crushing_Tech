@@ -63,6 +63,48 @@ header{
   font-weight: bold;
   text-indent: 2px;
 }
+.util{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.bell_container{
+  position: relative;
+}
+.bell_btn{
+  padding: 4px 5px;
+ border-radius: 5px;
+
+}
+#noti_container{
+  width: 350px;
+  position: absolute;
+  top: 50;
+  left: -180;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 10px;
+  border-radius: 10px;
+  gap: 20px;
+}
+.show_noti{
+  visibility:hidden;
+}
+.noti_header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.noti_text_wrapper{
+  background: gray;
+  padding: 10px 5px;
+}
+.noti_text{
+  font-size: 13px;
+}
 
 /*************************************************** wrapper styles ****************************************************************/
 .wrapper{
