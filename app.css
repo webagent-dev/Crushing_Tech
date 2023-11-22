@@ -124,7 +124,7 @@ header{
   flex-direction: column;
 }
 .guide_container_wrapper{
-  /* display: none; */
+    /* display: none; */
 }
 .setup_wrapper{
   width: 100%;
@@ -157,7 +157,9 @@ header{
   font-weight: 200;
 }
 .setup_toggle{}
-.toggle{}
+.toggle{
+  cursor: pointer;
+}
 /*************************************************** setup items styles ****************************************************************/
 .setup_item_container{
   /* background:  #7b7878; */
@@ -184,6 +186,9 @@ header{
   gap: 20px;
 }
 #seen{
+  display: none;
+}
+.seen_list{
   display: none;
 }
 .setup_item_header_wrapper{
@@ -227,7 +232,9 @@ header{
   cursor: pointer;
   font-size: 12px;
 }
-.setup_item_image{}
+.setup_item_image{
+ 
+}
 
 /*************************************************** media query functionality ****************************************************************/
 /* 650  first media query adjustment*/
