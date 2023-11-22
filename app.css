@@ -87,8 +87,8 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* display: none; */
 }
+
 .model_text{
   line-height:18.2px;
   font-size: 13px;
@@ -109,6 +109,7 @@ header{
 }
 .model_close{
   width: 25px;
+  cursor: pointer;
 }
 
 /*************************************************** setup guide styles ****************************************************************/
