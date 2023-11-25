@@ -23,7 +23,7 @@
                       <button class="bell_btn" onclick="toggleBell()">
                         <img src='https://crushingit.tech/hackathon-assets/icon-bell.svg' alt='bell-image' class='bell'/>
                       </button>
-                      <div id="noti_container">
+                      <div class="noti_container">
                           <div class="noti_header">
                             <h3 class="noti_header_text">Alerts</h3>
                             <div class="noti_icon">
@@ -36,39 +36,57 @@
                             </div>
                       </div>
               </div>
-              <div class='select_container'>
-                <button class='profile_btn'>
+              <div class='menu_wrapper'>
+                <button class='menu_trigger' 
+                id='menu_opener'
+                aria-haspopup="true"
+                aria-expanded="false"
+                aria-controls='profile_menu'
+                >
                     Davil Collections
-                  <button class="small_btn">DC</button>
+                  <span class="small_btn">DC</span>
                 </button>
-                    <div class="select_item_container">
-                      <div class="name_container">
-                        <div class="name_wrapper">
-                          <div class="dc">DC</div>
-                          <h3 class="fullname">Davil Collections</h3>
-                        </div>
-                        <img src="" alt="mark_png" class="mark">
-                      </div>
-                      <div class="store_container">
-                        <img src="https://crushingit.tech/hackathon-assets/icon-store.svg" alt="store_icon" class="store_icon">
-                        <p class="all">All stores</p>
-                      </div>
-                      <hr />
-                      <ul>
-                      <li class="lst">Help Center</li>
-                      <li class="lst">Changelog</li>
-                      <li class="lst">Community forums</li>
-                      <li class="lst">Hire a Shopify Partner</li>
-                      <li class="lst">Keyboard shortcuts</li>
-                      <hr /> 
-                      <div class="email_container">
-                        <h3 class="name_again">David Micheal</h3>
-                        <p class="email">davidmicheal@gmail.com</p>
-                      </div>
-                      <li class="lst">Manage account</li>
-                      <li class="lst">Log out</li>
-                    </ul>
+                   
+                   <ul class='menu' id='profile_menu' role='menu' aria-labelledby='menu_opener'>
+                    <div class='menu_content'>
+                    <div class='profile'>
+                      <span class="small_btn">DC</span>
+                      <h3 class='profile_name'>Davii Collections</h3>
                     </div>
+                    <div class='profile_icon>
+                    <img src='https://crushingit.tech/hackathon-assets/icon-store.svg' alt='profile_icon' />
+                    <p>All stores</p>
+                    </div>
+                    <span class='underline' />
+                    </div>
+                        <li class='menu_item'>
+                            <button role='menuitem' >Help Center</button>
+                        </li>
+                         <li class='menu_item'>
+                            <button role='menuitem'>Changelog</button>
+                        </li>
+                         <li class='menu_item'>
+                            <button role='menuitem'>Community forums</button>
+                        </li>
+                         <li class='menu_item'>
+                            <button role='menuitem'>Hire a Shopify Partner</button>
+                        </li>
+                         <li class='menu_item'>
+                            <button role='menuitem'>Keyboard shortcuts</button>
+                        </li>
+                        <span class='underline' />
+                        <div class='email_container>
+                            <h2 class='email_name'>David Micheal</h2>
+                            <p class='email'>davidmicheal@gmail.com</p>
+                        </div>
+                        </li>
+                         <li class='menu_item'>
+                            <button role='menuitem'>Manage account</button>
+                        </li>
+                         <li class='menu_item'>
+                            <button role='menuitem'>Log out</button>
+                        </li>
+                   </ul>
              </div>
               </div>
         </header>

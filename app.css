@@ -77,11 +77,11 @@ header{
  border-radius: 5px;
 
 }
-#noti_container{
+.noti_container{
   width: 350px;
   position: absolute;
-  top: 50;
-  left: -180;
+  top: 60;
+  left: -300;
   background: black;
   color: white;
   display: flex;
@@ -89,9 +89,10 @@ header{
   padding: 15px 10px;
   border-radius: 10px;
   gap: 20px;
+  display: none;
 }
 .show_noti{
-  visibility:hidden;
+  display: block;
 }
 .noti_header{
   display: flex;
@@ -112,29 +113,7 @@ header{
   color: white;
 }
 
-.small_btn{
-  padding: 4px 2px;
-  border-radius: 5px;
-  background: green;
-  color: black;
-}
-.select_container{
-  position: relative;
-}
-.select_item_container{
-  /* display: none; */
-  position: absolute;
-  top: 50;
-  right: 10;
-  width: 300px;
-  background: black;
-  color: white;
-  border-radius: 10px;
-  padding: 15px 10px;
-}
-.remove_menu{
-   display: none;
-}
+
 /*************************************************** wrapper styles ****************************************************************/
 .wrapper{
   width: 45%;
@@ -147,7 +126,9 @@ header{
   justify-content: center;
   flex-direction: column;
 }
-
+.menu{
+  display: none;
+}
 /*************************************************** model styles ****************************************************************/
 .model_container{
   width: 100%;
