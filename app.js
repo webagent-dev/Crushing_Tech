@@ -27,3 +27,11 @@ function toggleSetup(){
         const bellToggle = document.querySelector('.noti_container');
          bellToggle.classList.toggle('show_noti')
     }
+
+    // function to toggle menu
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menu');
+        console.log(menuToggle)
+        menuToggle.classList.toggle('show_menu')
+    }

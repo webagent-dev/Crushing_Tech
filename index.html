@@ -37,12 +37,13 @@
                       </div>
               </div>
               <div class='menu_wrapper'>
-                <button class='menu_trigger' 
+                <button 
+                onclick="toggleMenu()"
+                class='menu_trigger' 
                 id='menu_opener'
                 aria-haspopup="true"
                 aria-expanded="false"
-                aria-controls='profile_menu'
-                >
+                aria-controls='profile_menu'>
                     Davil Collections
                   <span class="small_btn">DC</span>
                 </button>
@@ -51,9 +52,9 @@
                     <div class='menu_content'>
                     <div class='profile'>
                       <span class="small_btn">DC</span>
-                      <h3 class='profile_name'>Davii Collections</h3>
+                      <p class='profile_name'>Davii Collections</p>
                     </div>
-                    <div class='profile_icon>
+                    <div class='profile_icon'>
                     <img src='https://crushingit.tech/hackathon-assets/icon-store.svg' alt='profile_icon' />
                     <p>All stores</p>
                     </div>
@@ -74,8 +75,7 @@
                          <li class='menu_item'>
                             <button role='menuitem'>Keyboard shortcuts</button>
                         </li>
-                        <span class='underline' />
-                        <div class='email_container>
+                        <div class='email_container'>
                             <h2 class='email_name'>David Micheal</h2>
                             <p class='email'>davidmicheal@gmail.com</p>
                         </div>
