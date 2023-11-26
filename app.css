@@ -10,26 +10,22 @@
   font-smooth: always;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
-  /* font-family: 'Inter', sans-serif; */
- font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: inter;
 }
 body {
   width: 100vw;
   height: 100vh;
   background: #F1F1F1;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
 
 /*************************************************** header styles ****************************************************************/
 header{
- max-width: 100%;
   height: 56px;
-  background: #1C181D;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 12px 16px;
+  background: #1A1A1A;
 
 }
 .logo_image-2{
@@ -38,27 +34,24 @@ header{
 .search_container{
   max-width: 450px;
   padding: 5px 2px;
-  background: #475467;
+  background: #0f0e0e;
   display: flex;
     flex: 30%;
    align-items: center;
    justify-content: center;
    gap: 10px;
-   border-radius: 5px;
-   box-shadow: inset 0px 2px 5px;
-   border: 5px white rounded;
-   
+   border-radius: 8px;
+   border: 1px solid #616161;
 }
 .search_icon{
   width: 15px;
-  z-index: 1;
 }
 .search_input{
   width: 90%;
   height: 100%;
   border: none;
    padding: 5px 2px;
-  background: #475467;
+  background: #0f0e0e;
   outline: none;
   color: white;
 }
@@ -67,6 +60,7 @@ header{
   font-weight: bold;
   text-indent: 2px;
 }
+
 .util{
   display: flex;
   align-items: center;
@@ -125,12 +119,16 @@ header{
   position: relative;
 }
 .small_btn{
-  background: lightgreen;
+  background: #36FBA1;
+  border-radius: 6px;
+  padding: 9px 5px 10px 5px;
   padding: 5px 5px; 
   border-radius: 2px;
 }
 .small_btn_other{
-  background: lightgreen;
+  background: #36FBA1;
+  border-radius: 6px;
+  padding: 9px 5px 10px 5px;
   padding: 5px 5px; 
   border-radius: 2px;
   display: none;
@@ -224,29 +222,20 @@ header{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
-}
-.profile_name{
-  font-size: 15px;
-}
-.underline{
-  background: white;
-  opacity: .5;
-  padding: 1px;
 }
 
 /*************************************************** model styles ****************************************************************/
 .model_container{
   width: 100%;
-  background: #1C181D;
+  background: #1A1A1A;
   padding: 12px 8px 12px 16px;
   border-radius: 8px;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* display: none; */
 }
-
 .model_text{
   line-height:18.2px;
   font-size: 13px;
@@ -261,20 +250,18 @@ header{
 .model_btn{
   padding: 7px 15px;
   border-radius: 6px;
-  border: none;
-  box-shadow: inset 0px 2px 3px;
+  box-shadow: 0px -1px 0px 0px #B5B5B5 inset;
   cursor: pointer;
 }
 .model_close{
   width: 25px;
-  cursor: pointer;
 }
 
 /*************************************************** setup guide styles ****************************************************************/
 .guide_container{
   margin-top: 20px;
   width: 95%;
-  background: #E3E3E3;
+  background: rgb(194, 197, 197);
   border-radius: 10px;
   padding: 15px 20px;
   display: flex;
@@ -282,7 +269,7 @@ header{
   flex-direction: column;
 }
 .guide_container_wrapper{
-    /* display: none; */
+  /* display: none; */
 }
 .setup_wrapper{
   width: 100%;
@@ -307,7 +294,6 @@ header{
   margin-top: 20px;
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 10px;
   font-weight: 400;
 }
@@ -316,9 +302,7 @@ header{
   font-weight: 200;
 }
 .setup_toggle{}
-.toggle{
-  cursor: pointer;
-}
+.toggle{}
 /*************************************************** setup items styles ****************************************************************/
 .setup_item_container{
   /* background:  #7b7878; */
@@ -331,24 +315,23 @@ header{
 }
 .setup_items{
   margin-top: 5px;
+  /* background:  #7b7878; */
   border-radius: 10px;
   padding: 5px 2px;
-   
+    /* display: flex;
+    gap: 5px;
+    flex-direction: column; */
 }
-#setup_item_wrapper{
+.setup_item_wrapper{
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  /* display: none; */
-
-}
-/* .seen{
-  display: block;
-} */
-.seen_list{
+  gap: 20px;
   display: none;
 }
+/* #seen{
+  display: none;
+} */
 .setup_item_header_wrapper{
   display: flex;
   align-items: center;
@@ -377,7 +360,6 @@ header{
   font-size: 12px;
 }
 .setup_item_other_link{
-  max-width: 80px;
   text-decoration: none;
   font-size: 12px;
 }
@@ -391,57 +373,48 @@ header{
   cursor: pointer;
   font-size: 12px;
 }
-.setup_item_image{
- 
-}
-.background{
-  width: 20px;
-  height: 3px;
-  background: black;
-  border-radius: 5px;
-
-}
+.setup_item_image{}
 
 /*************************************************** media query functionality ****************************************************************/
 /* 650  first media query adjustment*/
 
 @media screen and (max-width: 650px) {
  /*************************************************** header media query ****************************************************************/
-  .logo_image{
-    display: none;
-  }
-  header{
-     height: 50px;
-     padding: 8px 5px;
-   }
-  .logo_image-2{
-    display: inline-block;
-  }
-  .search_container{
-    max-width: 180px;
-    padding: 3px 2px;
-    justify-content: space-between;
-    flex: 15%;
-     gap: 20px;
-  }
-  .menu_trigger{
-    display: none;
-  }
-  .small_btn_other{
-    display: block;
-  }
-  .menu{
-    width: 300px;
-    top: 60;
-    right: -40;
-  }
-  .noti_container{
-    width: 300px;
-    top: 60;
-    left: -220;
-    padding: 15px 10px;
-   
-  }
+ .logo_image{
+  display: none;
+}
+header{
+   height: 50px;
+   padding: 8px 5px;
+ }
+.logo_image-2{
+  display: inline-block;
+}
+.search_container{
+  max-width: 180px;
+  padding: 3px 2px;
+  justify-content: space-between;
+  flex: 15%;
+   gap: 20px;
+}
+.menu_trigger{
+  display: none;
+}
+.small_btn_other{
+  display: block;
+}
+.menu{
+  width: 300px;
+  top: 60;
+  right: -40;
+}
+.noti_container{
+  width: 300px;
+  top: 60;
+  left: -220;
+  padding: 15px 10px;
+ 
+}
   /*************************************************** wrapper media query ****************************************************************/
   .wrapper{
     width: 100%;
