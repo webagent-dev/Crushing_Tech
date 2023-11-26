@@ -94,6 +94,7 @@ header{
   padding: 15px 10px;
   border-radius: 10px;
   gap: 20px;
+  z-index: 1;
   display: none;
 }
 .show_noti{
@@ -128,6 +129,12 @@ header{
   padding: 5px 5px; 
   border-radius: 2px;
 }
+.small_btn_other{
+  background: lightgreen;
+  padding: 5px 5px; 
+  border-radius: 2px;
+  display: none;
+}
 .menu{
   /* display: none; */
   width: 300px;
@@ -140,6 +147,7 @@ header{
   padding: 10px 5px;
   display: none;
   box-shadow: 5px 10px #E3E3E3;
+  z-index: 1;
 }
 .show_menu{
   display: block;
@@ -402,14 +410,37 @@ header{
   .logo_image{
     display: none;
   }
+  header{
+     height: 50px;
+     padding: 8px 5px;
+   }
   .logo_image-2{
     display: inline-block;
   }
   .search_container{
-    max-width: 250px;
+    max-width: 180px;
     padding: 3px 2px;
-    flex: 20%;
-     gap: 10px;
+    justify-content: space-between;
+    flex: 15%;
+     gap: 20px;
+  }
+  .menu_trigger{
+    display: none;
+  }
+  .small_btn_other{
+    display: block;
+  }
+  .menu{
+    width: 300px;
+    top: 60;
+    right: -40;
+  }
+  .noti_container{
+    width: 300px;
+    top: 60;
+    left: -220;
+    padding: 15px 10px;
+   
   }
   /*************************************************** wrapper media query ****************************************************************/
   .wrapper{
