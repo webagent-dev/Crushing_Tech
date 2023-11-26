@@ -299,6 +299,7 @@ header{
   margin-top: 20px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 10px;
   font-weight: 400;
 }
@@ -326,11 +327,11 @@ header{
   padding: 5px 2px;
    
 }
-.setup_item_wrapper{
+#setup_item_wrapper{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+
   /* display: none; */
 
 }
@@ -384,6 +385,13 @@ header{
 }
 .setup_item_image{
  
+}
+.background{
+  width: 20px;
+  height: 3px;
+  background: black;
+  border-radius: 5px;
+
 }
 
 /*************************************************** media query functionality ****************************************************************/

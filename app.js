@@ -1,7 +1,7 @@
 
 let index;
 // function to remove model
-
+const num3 = document.querySelector('.num3')
 function removeModel(){
     const closeModel = document.querySelector('.model_container');
         closeModel.remove();
@@ -39,17 +39,40 @@ function toggleSetup(){
     // mark icon when clicked
     // function for setup guide
     function getSetup(){
-        let imageChange = false;
+        const num3 = document.querySelector('.num3')
+        let num1 = document.querySelector('.num1')
+        let background = document.querySelector('.background')
         const list = document.querySelectorAll('.setup_items');
         list.forEach((item, index) => {
-         
+            num3.innerHTML = list.length
+           
         const mark = item.querySelector('.item_header_img')
                 mark.addEventListener('click', () => {
                         mark.src ='https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg'
+                        num1.innerHTML = index + 1
+                        switch (index) {
+                            case 0:
+                                background.style.width = '20px'
+                                break;
+                            case 2:
+                                background.style.width = '40px'
+                                break;
+                            case 3:
+                                 background.style.width = '60px'
+                                 break;
+                            case 4:
+                                 background.style.width = '80px'
+                                 break;
+                            case 5:
+                                 background.style.width = '100px'
+                                 break;
+                        }
                 })
+                    
+
             item.addEventListener('click', () => {
                 mainItem = item.querySelector('.setup_item_wrapper')
-                //  mainItem.classList.add('seen')
+              
             })
         })
     }
