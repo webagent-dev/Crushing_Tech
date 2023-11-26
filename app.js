@@ -1,4 +1,5 @@
 
+let index;
 // function to remove model
 
 function removeModel(){
@@ -32,6 +33,24 @@ function toggleSetup(){
 
     function toggleMenu(){
         const menuToggle = document.querySelector('.menu');
-        console.log(menuToggle)
         menuToggle.classList.toggle('show_menu')
     }
+
+    // mark icon when clicked
+    // function for setup guide
+    function getSetup(){
+        let imageChange = false;
+        const list = document.querySelectorAll('.setup_items');
+        list.forEach((item, index) => {
+         
+        const mark = item.querySelector('.item_header_img')
+                mark.addEventListener('click', () => {
+                        mark.src ='https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg'
+                })
+            item.addEventListener('click', () => {
+                mainItem = item.querySelector('.setup_item_wrapper')
+                //  mainItem.classList.add('seen')
+            })
+        })
+    }
+    getSetup()
