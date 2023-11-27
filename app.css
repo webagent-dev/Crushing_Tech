@@ -75,17 +75,22 @@ header{
   position: relative;
 }
 .bell_btn{
-  padding: 4px 5px;
- border-radius: 5px;
- background: #475467;
+  /* padding: 6px; */
+  height: 32px;
+  width: 32px;
+ border-radius: 8px;
+ background: transparent;
 
+}
+.bell_btn:hover{
+  background: #616161;
 }
 .noti_container{
   width: 350px;
   position: absolute;
   top: 60;
   left: -200;
-  background: #616161;
+  background: #fff;
   color: black;
   display: flex;
   flex-direction: column;
@@ -104,8 +109,9 @@ header{
   justify-content: space-between;
 }
 .noti_text_wrapper{
-  background: gray;
-  padding: 10px 5px;
+  background: #EBEBEB;
+  padding: 8px;
+  border-radius: 5px;
 }
 .noti_text{
   font-size: 13px;
@@ -265,12 +271,14 @@ header{
 .guide_container{
   margin-top: 20px;
   width: 95%;
-  background: rgb(194, 197, 197);
-  border-radius: 10px;
-  padding: 15px 20px;
+  background: #FFF;
+  padding: 8px;
+  border: 1px solid  #DBDBDB;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  border-radius: 18px;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05);
 }
 .guide_container_wrapper{
   /* display: none; */

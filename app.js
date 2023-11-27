@@ -81,7 +81,6 @@ function toggleSetup(){
                if(!checkClass){
                 mainItem.classList.add('seen')
                 mark.src = 'https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg'
-                index - 1
                }
             })
         })
