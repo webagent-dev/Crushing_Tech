@@ -327,11 +327,14 @@ header{
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+
+}
+.seen{
   display: none;
 }
-/* #seen{
+.seen_list{
   display: none;
-} */
+}
 .setup_item_header_wrapper{
   display: flex;
   align-items: center;

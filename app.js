@@ -51,7 +51,7 @@ function toggleSetup(){
                         mark.src ='https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg'
                         num1.innerHTML = index + 1
                         switch (index) {
-                            case 0:
+                            case 1:
                                 background.style.width = '20px'
                                 break;
                             case 2:
@@ -72,7 +72,15 @@ function toggleSetup(){
 
             item.addEventListener('click', () => {
                 mainItem = item.querySelector('.setup_item_wrapper')
-              
+                const checkClass = mainItem.classList.contains('seen')
+               if(checkClass){
+                mainItem.classList.remove('seen')
+                
+               }
+             
+               if(!checkClass){
+                mainItem.classList.add('seen')
+               }
             })
         })
     }
