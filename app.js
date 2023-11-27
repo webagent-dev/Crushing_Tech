@@ -35,7 +35,11 @@ function toggleSetup(){
         menuToggle.classList.toggle('show_menu')
     }
 
+    
     // mark icon when clicked
+
+
+
     // function for setup guide
     function getSetup(){
         const num3 = document.querySelector('.num3')
@@ -44,10 +48,8 @@ function toggleSetup(){
         const list = document.querySelectorAll('.setup_items');
         list.forEach((item, index) => {
             num3.innerHTML = list.length
-           
         const mark = item.querySelector('.item_header_img')
                 mark.addEventListener('click', () => {
-                        mark.src ='https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg'
                         num1.innerHTML = index + 1
                         switch (index) {
                             case 1:
@@ -79,7 +81,6 @@ function toggleSetup(){
              
                if(!checkClass){
                 mainItem.classList.add('seen')
-                mark.src = 'https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg'
                }
             })
         })
