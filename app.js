@@ -75,11 +75,13 @@ function toggleSetup(){
                 const checkClass = mainItem.classList.contains('seen')
                if(checkClass){
                 mainItem.classList.remove('seen')
-                
+                // mark.src ='https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg'
                }
              
                if(!checkClass){
                 mainItem.classList.add('seen')
+                mark.src = 'https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg'
+                index - 1
                }
             })
         })
