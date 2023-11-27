@@ -12,6 +12,10 @@
   -webkit-touch-callout: none;
   font-family: inter;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
 body {
   width: 100vw;
   height: 100vh;
