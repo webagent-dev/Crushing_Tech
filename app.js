@@ -1,4 +1,3 @@
-
 let index;
 // function to remove model
 const num3 = document.querySelector('.num3')

@@ -1,52 +1,36 @@
-       <div class='menu_wrapper'>
-                <button class='menu_trigger' 
-                id='menu_opener'
-                aria-haspopup="true"
-                aria-expanded="false"
-                aria-controls='profile_menu'
-                >
-                    Davil Collections
-                  <span class="small_btn">DC</span>
-                </button>
-                   
-                   <ul class='menu' id='profile_menu' role='menu' aria-labelledby='menu_opener'>
-                    <div class='menu_content'>
-                    <div class='profile'>
-                      <span class="small_btn">DC</span>
-                      <h3 class='profile_name'>Davii Collections</h3>
-                    </div>
-                    <div class='profile_icon>
-                    <img src='https://crushingit.tech/hackathon-assets/icon-store.svg' alt='profile_icon' />
-                    <p>All stores</p>
-                    </div>
-                    <span class='underline' />
-                    </div>
-                        <li class='menu_item'>
-                            <button role='menuitem' >Help Center</button>
-                        </li>
-                         <li class='menu_item'>
-                            <button role='menuitem'>Changelog</button>
-                        </li>
-                         <li class='menu_item'>
-                            <button role='menuitem'>Community forums</button>
-                        </li>
-                         <li class='menu_item'>
-                            <button role='menuitem'>Hire a Shopify Partner</button>
-                        </li>
-                         <li class='menu_item'>
-                            <button role='menuitem'>Keyboard shortcuts</button>
-                        </li>
-                        <span class='underline' />
-                        <div class='email_container>
-                            <h2 class='email_name'>David Micheal</h2>
-                            <p class='email'>davidmicheal@gmail.com</p>
-                        </div>
-                        </li>
-                         <li class='menu_item'>
-                            <button role='menuitem'>Manage account</button>
-                        </li>
-                         <li class='menu_item'>
-                            <button role='menuitem'>Log out</button>
-                        </li>
-                   </ul>
-             </div>
+.shopping-item-checkbox{
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+
+    height: 124px;
+    width: 124px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid #b5b5b5;
+    transition: all 100ms ease-in-out;
+}
+.shopping-item-checkbox:focus{
+    outline: 2px solid #005bd3;
+    outline-offset: 2px;
+}
+.shopping-item{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.shopping-item-checkbox:focus .not-completed-icon circle{
+    fill: #d9d9d9;
+    stroke-dasharray: 0 0;
+}
+.shopping-item-checkbox:hover .not-completed-icon circle{
+    stroke-dasharray: 0 0;
+}
+
+.hidden{
+    display: none;
+}
