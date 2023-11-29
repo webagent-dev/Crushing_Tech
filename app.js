@@ -46,29 +46,31 @@ function toggleSetup(){
         let num1 = document.querySelector('.num1')
         let background = document.querySelector('.background')
         const list = document.querySelectorAll('.setup_items');
+        console.log(list)
+
         list.forEach((item, index) => {
             num3.innerHTML = list.length
-        const mark = item.querySelector('.item_header_img')
-                mark.addEventListener('click', () => {
-                        num1.innerHTML = index + 1
-                        switch (index) {
-                            case 1:
-                                background.style.width = '20px'
-                                break;
-                            case 2:
-                                background.style.width = '40px'
-                                break;
-                            case 3:
-                                 background.style.width = '60px'
-                                 break;
-                            case 4:
-                                 background.style.width = '80px'
-                                 break;
-                            case 5:
-                                 background.style.width = '100px'
-                                 break;
-                        }
-                })
+        // const mark = item.querySelector('.item_header_img')
+                // mark.addEventListener('click', () => {
+                //         num1.innerHTML = index + 1
+                //         switch (index) {
+                //             case 1:
+                //                 background.style.width = '20px'
+                //                 break;
+                //             case 2:
+                //                 background.style.width = '40px'
+                //                 break;
+                //             case 3:
+                //                  background.style.width = '60px'
+                //                  break;
+                //             case 4:
+                //                  background.style.width = '80px'
+                //                  break;
+                //             case 5:
+                //                  background.style.width = '100px'
+                //                  break;
+                //         }
+                // })
                     
 
             item.addEventListener('click', () => {
@@ -76,7 +78,7 @@ function toggleSetup(){
                 const checkClass = mainItem.classList.contains('seen')
                if(checkClass){
                 mainItem.classList.remove('seen')
-                // mark.src ='https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg'
+                
                }
              
                if(!checkClass){
